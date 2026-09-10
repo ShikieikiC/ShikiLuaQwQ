@@ -1,11 +1,12 @@
 {
-    "version": "2.98",
+    "version": "2.99",
     "url": "https://space.bilibili.com/20568856/dynamic",
     "notes": {
         "v2.97": "① 新增成就文件导入功能，可将 UserGameStatsSchema_<AppID>.bin 直接拖入 KeySteam 以修补缺失的成就；② 完善 .ks 与 .lua 文件的兼容处理，游戏列表检测、清理保护及清单扫描现在均可正确识别两种格式，不再主动迁移 .lua 文件。",
         "v2.98": "① 重做清单监听：监听到缺失清单后，通过多路镜像从远端清单缓存并发下载，并自动锁定游戏版本；② 新增清单下载按钮，支持按行批量输入 depotid_manifestid 进行下载，并自动锁定游戏版本（主要用于清单监听不触发时）；③ 调整压缩包拖入行为，不再导入包内 Lua，改为批量导入 manifest 并自动锁定游戏版本。",
+        "v2.99": "① 优化清单监听：结合 Lua/KS 批量推导清单版本，巨幅提升清单下载效率；② 新增 depotcache 与 config/depotcache 启动时双向增量同步，缺失清单优先从本地备份恢复；③ 移除底部手动清单下载功能；④ 搜索结果对齐对无用项过滤规则，不会再出现 demo、playtest 等；⑤ 版本锁定状态仅根据 setManifestid 函数判断，锁定项名称首尾自动添加爱心标记。",
         "挂条狗v": "淘宝店铺：小音の游戏。全家活光光噜~ 另外有任何发现倒卖 KeySteam 的欢迎带订单和聊天记录截图私我。"
     },
-    "force": false,
-    "manifest_sig": "U74OzS5pZV5XisXLw54IErd8aXr7I/GPre6+rQ4dgH2egCM8ouODz5JrAruNWjZSVzKiLlOLCUSn685fITWhCg=="
+    "force": true,
+    "manifest_sig": "+F2o7fOcbyyMEenLd+1UQ3fx6nuFsdVQLhWJ0xIC5K1yl3Ky9GdxphySzICzFuFeUtkexQ/DNiuvrWUFDNTlCg=="
 }
