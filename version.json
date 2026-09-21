@@ -1,0 +1,11 @@
+{
+    "version": "2.991",
+    "url": "https://space.bilibili.com/20568856/dynamic",
+    "notes": {
+        "v2.99": "① 优化清单监听：结合 Lua/KS 批量推导清单版本，巨幅提升清单下载效率；② 新增 depotcache 与 config/depotcache 启动时双向增量同步，缺失清单优先从本地备份恢复；③ 移除底部手动清单下载功能；④ 搜索结果对齐对无用项过滤规则，不会再出现 demo、playtest 等；⑤ 版本锁定状态仅根据 setManifestid 函数判断，锁定项名称首尾自动添加爱心标记。",
+        "v2.991": "① 净化 Steam：新增先删除本地资源缓存并强制重新初始化远端资源流程，卡住时会弹窗提示手动导入压缩包，资源就绪后才继续原有的 Steam 环境清理；② 清单监听：优先从远端清单缓存多路镜像并发下载，失败时自动降级为获取请求码走 SteamPipe CDN 下载并解压；③ 取消锁定版本：不再主动锁定 Steam 客户端版本与游戏版本。",
+        "挂条狗v": "淘宝店铺：小音の游戏。全家活光光噜~ 另外有任何发现倒卖 KeySteam 的欢迎带订单和聊天记录截图私我。"
+    },
+    "force": true,
+    "manifest_sig": "fg/bprpulFbWOYDDylv1kmit9BVxUz7UBvaHOdcmAw/+aDd3RSYWGZPHTkmGrIuI7mUNgtQnQuUo6xRqYgmSAA=="
+}
