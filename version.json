@@ -1,12 +1,13 @@
 {
-    "version": "2.992",
+    "version": "2.993",
     "url": "https://space.bilibili.com/20568856/dynamic",
     "notes": {
         "v2.99": "① 优化清单监听：结合 Lua/KS 批量推导清单版本，巨幅提升清单下载效率；② 新增 depotcache 与 config/depotcache 启动时双向增量同步，缺失清单优先从本地备份恢复；③ 移除底部手动清单下载功能；④ 搜索结果对齐对无用项过滤规则，不会再出现 demo、playtest 等；⑤ 版本锁定状态仅根据 setManifestid 函数判断，锁定项名称首尾自动添加爱心标记。",
         "v2.991": "① 净化 Steam：新增先删除本地资源缓存并强制重新初始化远端资源流程，卡住时会弹窗提示手动导入压缩包，资源就绪后才继续原有的 Steam 环境清理；② 清单监听：优先从远端清单缓存多路镜像并发下载，失败时自动降级为获取请求码走 SteamPipe CDN 下载并解压；③ 取消锁定版本：不再主动锁定 Steam 客户端版本与游戏版本。",
         "v2.992": "①（！！重要！！）出现 内容仍然处于加密状态 的，请先优先考虑更新 Lua；② 下载联机补丁增加对名字带特殊符号的游戏的兼容；③ 增加针对授权文件的 GBE 授权方案。",
+        "v2.993": "① 修复更新弹窗无法关闭：强制更新弹窗出现后点窗口关闭按钮或按 Esc 现在会正常退出程序，不再需要开任务管理器；② 咕咕嘎嘎（TanuShiki）启动改为只要 Steam 进程出现即注入，不再等待 Steam 界面模块加载完毕，启动更跟手；④ 单次入库上限设置为 10000 个，并优化票据校验热路径，大批量入库不会再被服务端拒绝。",
         "挂条狗v": "淘宝店铺：小音の游戏。全家死光光了。另外有任何发现倒卖 KeySteam 的欢迎带订单和聊天记录截图私我。"
     },
-    "force": true,
-    "manifest_sig": "pI5PEbGz4V3SrH60WIfYxXjlI2p8s+PkNllw9WxoCrKcMA2pabxGXM5ToA5esKvygxSeNWmSrhd68h1I8sgrDg=="
+    "force": false,
+    "manifest_sig": "83katABzbF+s61VE4myd0ootAYxY1i54fLM/zFnzKwPBzY33Z6ydyfi28T6BvUPRYPzBAL7/bmBgOBCuHJINBw=="
 }
